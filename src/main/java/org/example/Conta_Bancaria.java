@@ -2,10 +2,15 @@ package org.example;
 import java.util.Scanner;
 
 public class Conta_Bancaria {
+
+    //Crição dos metodos
+
     private String nome_completo;
     private double saldo;
 
     private double saldo_investido;
+
+    //Logica/funções do banco, exibição de conta bancaria, saque, deposito, investimento, dados da conta, o bonus e exibição saldos
 
     public Conta_Bancaria(String nome_completo, double saldo) {
         this.nome_completo = nome_completo;

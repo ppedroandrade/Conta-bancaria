@@ -3,22 +3,22 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Conta_Bancaria contaBancaria1 = new Conta_Bancaria("Pedro Salvaro",100);
+        Conta_Bancaria conta1 = new Conta_Bancaria("Pedro Salvaro",100);
         int escolha;
         do{
             escolha  = menuInicial();
 
             switch (escolha) {
-                case 1 -> contaBancaria1.deposito();
-                case 2 -> contaBancaria1.investimento();
-                case 3 -> contaBancaria1.sacar();
-                case 4 -> contaBancaria1.sacar_do_investimento();
-                case 5 -> contaBancaria1.exibir_saldos();
-                case 6 -> contaBancaria1.dados_da_conta();
+                case 1 -> conta1.deposito();
+                case 2 -> conta1.investimento();
+                case 3 -> conta1.sacar();
+                case 4 -> conta1.sacar_do_investimento();
+                case 5 -> conta1.exibir_saldos();
+                case 6 -> conta1.dados_da_conta();
                 case 7 ->  System.out.println("Obrigado por usar o NuBank. Até a próxima!");
                 default -> System.out.println("Opção inválida. Escolha novamente.");
             }
-            contaBancaria1.bonus();
+            conta1.bonus();
         }while(escolha < 7);
 
     }
