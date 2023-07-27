@@ -1,5 +1,6 @@
 package org.example;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Conta_Bancaria {
@@ -28,8 +29,8 @@ public class Conta_Bancaria {
     public void setSaldo(Long saldo_inicial) {
         this.saldo = saldo_inicial;
     }
-    public String resgate(){return"Voce resgout ..."; }
-    public String deposito(){return"Voce resgout ...";}   //PERGUNTAR O VALOR DE INPUT AQUI DENTRO DA CONTA }
+    public void sacar(){}
+    public void deposito(){}   //PERGUNTAR O VALOR DE INPUT AQUI DENTRO DA CONTA
     public void investimento(){
         System.out.println("Digite o valor a investir: ");
         Scanner input = new Scanner (System.in);
@@ -42,9 +43,8 @@ public class Conta_Bancaria {
         }else{
             System.out.println("Voce nao tem saldo pra investir");
         }
-
         }
-    public String dados_da_conta(){return"Voce resgout ..."; }
+    public void dados_da_conta(){}
     public void bonus(){
         saldo_investido = saldo_investido * 1.05;
     }
@@ -52,6 +52,5 @@ public class Conta_Bancaria {
         System.out.println("Seu saldo é :"+ saldo);
         System.out.println("Seu saldo investido é :"+ saldo_investido);
     }
-
 }
 
